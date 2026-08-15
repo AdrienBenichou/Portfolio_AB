@@ -367,7 +367,7 @@ a:hover { color: #6fa0ff; }
   display: none;
   position: absolute;
   left: 50%;
-  top: 66%;
+  top: 72%;
   transform: translate(-50%, -50%);
   z-index: 5;
 }
@@ -407,30 +407,30 @@ a:hover { color: #6fa0ff; }
   z-index: 5;
 }
 
+.profile-photo-float {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  perspective: 700px;
+  animation: fadeUp 0.8s 3.05s cubic-bezier(0.22,1,0.36,1) both, floatPhoto 6.5s 3.9s ease-in-out infinite;
+}
+
 .profile-photo-inner {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  perspective: 700px;
   background: linear-gradient(135deg, #1b2c55, #101a30);
   box-shadow: 0 0 0 3px rgba(50,120,255,0.55), 0 14px 34px rgba(50,120,255,0.35), 0 0 40px rgba(50,120,255,0.3);
-  animation: fadeUp 0.8s 3.05s cubic-bezier(0.22,1,0.36,1) both, floatPhoto 6.5s 3.9s ease-in-out infinite;
-}
-
-.profile-photo-flip {
-  width: 100%;
-  height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .profile-photo:hover .profile-photo-flip {
+  .profile-photo:hover .profile-photo-inner {
     transform: rotateY(360deg);
   }
 }
@@ -512,16 +512,16 @@ a:hover { color: #6fa0ff; }
   .cta-mobile-wrap { display: flex !important; justify-content: center; }
 
   .profile-photo {
-    top: 46% !important;
+    top: 45% !important;
     width: 78px !important;
     height: 78px !important;
-    transform: translate(calc(-50% - 74px), -50%) !important;
+    transform: translate(calc(-50% - 80px), -50%) !important;
   }
   .stats-radar {
-    top: 46% !important;
+    top: 45% !important;
     width: 164px !important;
     height: 164px !important;
-    transform: translate(calc(-50% + 78px), -50%) !important;
+    transform: translate(calc(-50% + 82px), -50%) !important;
   }
   .radar-label { font-size: 9px !important; }
 }
