@@ -28,12 +28,10 @@
     overlay.style.opacity = '1';
 
     setTimeout(function () {
+      // On ne réinitialise rien ici : l'overlay blanc doit rester visible
+      // jusqu'à ce que la nouvelle page ait fini de charger (la navigation
+      // remplace le document, donc cet état n'a pas besoin d'être annulé).
       window.location.href = url;
-      diving = false;
-      ctaInner.style.transform = 'scale(1)';
-      ctaInner.style.opacity = '1';
-      goalZoom.style.transform = 'scale(1)';
-      overlay.style.opacity = '0';
     }, 720);
   }
 
