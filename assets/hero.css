@@ -367,7 +367,7 @@ a:hover { color: #6fa0ff; }
   display: none;
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 66%;
   transform: translate(-50%, -50%);
   z-index: 5;
 }
@@ -512,16 +512,16 @@ a:hover { color: #6fa0ff; }
   .cta-mobile-wrap { display: flex !important; justify-content: center; }
 
   .profile-photo {
-    top: 49% !important;
-    width: 60px !important;
-    height: 60px !important;
-    transform: translate(calc(-50% - 68px), -50%) !important;
+    top: 46% !important;
+    width: 78px !important;
+    height: 78px !important;
+    transform: translate(calc(-50% - 74px), -50%) !important;
   }
   .stats-radar {
-    top: 49% !important;
-    width: 128px !important;
-    height: 128px !important;
-    transform: translate(calc(-50% + 44px), -50%) !important;
+    top: 46% !important;
+    width: 164px !important;
+    height: 164px !important;
+    transform: translate(calc(-50% + 78px), -50%) !important;
   }
-  .radar-label { font-size: 8px !important; }
+  .radar-label { font-size: 9px !important; }
 }
