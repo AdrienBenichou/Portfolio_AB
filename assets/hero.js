@@ -28,7 +28,7 @@
     overlay.style.opacity = '1';
 
     setTimeout(function () {
-      window.open(url, '_blank', 'noopener');
+      window.location.href = url;
       diving = false;
       ctaInner.style.transform = 'scale(1)';
       ctaInner.style.opacity = '1';
