@@ -401,7 +401,7 @@ a:hover { color: #6fa0ff; }
   position: absolute;
   left: 50%;
   top: 44%;
-  transform: translate(calc(-50% - clamp(180px, 19vw, 240px)), -50%);
+  transform: translate(calc(-50% - clamp(210px, 22vw, 280px)), -50%);
   width: clamp(90px, 9vw, 150px);
   height: clamp(90px, 9vw, 150px);
   z-index: 5;
@@ -416,9 +416,23 @@ a:hover { color: #6fa0ff; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  perspective: 700px;
   background: linear-gradient(135deg, #1b2c55, #101a30);
   box-shadow: 0 0 0 3px rgba(50,120,255,0.55), 0 14px 34px rgba(50,120,255,0.35), 0 0 40px rgba(50,120,255,0.3);
   animation: fadeUp 0.8s 3.05s cubic-bezier(0.22,1,0.36,1) both, floatPhoto 6.5s 3.9s ease-in-out infinite;
+}
+
+.profile-photo-flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile-photo:hover .profile-photo-flip {
+    transform: rotateY(360deg);
+  }
 }
 
 .profile-photo-img {
@@ -501,13 +515,13 @@ a:hover { color: #6fa0ff; }
     top: 49% !important;
     width: 60px !important;
     height: 60px !important;
-    transform: translate(calc(-50% - 60px), -50%) !important;
+    transform: translate(calc(-50% - 68px), -50%) !important;
   }
   .stats-radar {
     top: 49% !important;
     width: 128px !important;
     height: 128px !important;
-    transform: translate(calc(-50% + 32px), -50%) !important;
+    transform: translate(calc(-50% + 44px), -50%) !important;
   }
   .radar-label { font-size: 8px !important; }
 }
