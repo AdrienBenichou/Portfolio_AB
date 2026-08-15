@@ -394,7 +394,7 @@ a:hover { color: #6fa0ff; }
   position: absolute;
   left: 50%;
   top: 44%;
-  transform: translate(calc(-50% - clamp(140px, 14vw, 175px)), -50%);
+  transform: translate(calc(-50% - clamp(170px, 17vw, 205px)), -50%);
   width: clamp(84px, 8vw, 116px);
   height: clamp(84px, 8vw, 116px);
   z-index: 5;
@@ -433,7 +433,7 @@ a:hover { color: #6fa0ff; }
   position: absolute;
   left: 50%;
   top: 44%;
-  transform: translate(calc(-50% + clamp(175px, 18vw, 215px)), -50%);
+  transform: translate(calc(-50% + clamp(205px, 21vw, 250px)), -50%);
   width: clamp(150px, 15vw, 200px);
   height: clamp(150px, 15vw, 200px);
   z-index: 5;
