@@ -78,7 +78,7 @@
       return;
     }
 
-    var DURATION = 2600;
+    var DURATION = 1500;
     var start = null;
 
     function frame(ts) {
