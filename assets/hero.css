@@ -9,6 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: #05070d;
+  overflow: hidden;
 }
 
 a { color: #3278FF; text-decoration: none; }
