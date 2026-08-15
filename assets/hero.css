@@ -176,8 +176,8 @@ a:hover { color: #6fa0ff; }
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-.badge.badge-a .sheen { -webkit-mask-image: url("../img/badge-asmonaco.png"); mask-image: url("../img/badge-asmonaco.png"); }
-.badge.badge-b .sheen { -webkit-mask-image: url("../img/badge-cnosf.png"); mask-image: url("../img/badge-cnosf.png"); }
+.badge.badge-a .sheen { -webkit-mask-image: url("badge-asmonaco.png"); mask-image: url("badge-asmonaco.png"); }
+.badge.badge-b .sheen { -webkit-mask-image: url("badge-cnosf.png"); mask-image: url("badge-cnosf.png"); }
 
 .badge .sheen-fill { position: absolute; inset: 0; background-size: 200% 100%; }
 .badge.badge-a .sheen-fill {
