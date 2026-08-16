@@ -513,9 +513,9 @@ a:hover { color: #6fa0ff; }
 
   .profile-photo {
     top: 45% !important;
-    width: 78px !important;
-    height: 78px !important;
-    transform: translate(calc(-50% - 80px), -50%) !important;
+    width: 86px !important;
+    height: 86px !important;
+    transform: translate(calc(-50% - 92px), -50%) !important;
   }
   .stats-radar {
     top: 45% !important;
