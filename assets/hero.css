@@ -176,6 +176,8 @@ a:hover { color: #6fa0ff; }
 
 .badge img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+.badge.badge-a img { transform: scale(1.35); }
+
 .badge .sheen {
   position: absolute;
   inset: 0;
