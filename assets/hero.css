@@ -539,3 +539,6 @@ a:hover { color: #6fa0ff; }
   }
   .radar-label { font-size: 9px !important; }
 }
+
+.badge.badge-c .sheen { opacity: 0.2; }
+.badge.badge-b .sheen { opacity: 0.2; }
