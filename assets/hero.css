@@ -93,6 +93,12 @@ a:hover { color: #6fa0ff; }
   100% { transform: translateY(0); }
 }
 
+@keyframes floatC {
+  0% { transform: translateY(0); } 30% { transform: translateY(-4px); }
+  60% { transform: translateY(1px); } 80% { transform: translateY(3px); }
+  100% { transform: translateY(0); }
+}
+
 @keyframes floatPhoto {
   0% { transform: translateY(0); } 50% { transform: translateY(-1.5px); } 100% { transform: translateY(0); }
 }
@@ -172,7 +178,8 @@ a:hover { color: #6fa0ff; }
   flex-shrink: 0;
   animation: badgeIn 0.6s 4.75s cubic-bezier(0.22,1,0.36,1) both, floatA 3.6s 5.4s ease-in-out infinite;
 }
-.badge.badge-b { animation: badgeIn 0.6s 4.75s cubic-bezier(0.22,1,0.36,1) both, floatB 4s 5.4s ease-in-out infinite; }
+.badge.badge-b { animation: badgeIn 0.6s 4.75s cubic-bezier(0.22,1,0.36,1) both, floatB 4s 5.4s ease-in-out infinite; } 
+.badge.badge-c { animation: badgeIn 0.6s 4.75s cubic-bezier(0.22,1,0.36,1) both, floatC 4.7s 5.4s ease-in-out infinite; }
 
 .badge img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -188,6 +195,7 @@ a:hover { color: #6fa0ff; }
 }
 .badge.badge-a .sheen { -webkit-mask-image: url("badge-asmonaco.png"); mask-image: url("badge-asmonaco.png"); }
 .badge.badge-b .sheen { -webkit-mask-image: url("badge-cnosf.png"); mask-image: url("badge-cnosf.png"); }
+.badge.badge-c .sheen { -webkit-mask-image: url("badge-olympiquedemarseille.png"); mask-image: url("badge-olympiquedemarseille.png"); }
 
 .badge .sheen-fill { position: absolute; inset: 0; background-size: 200% 100%; }
 .badge.badge-a .sheen-fill {
@@ -197,6 +205,10 @@ a:hover { color: #6fa0ff; }
 .badge.badge-b .sheen-fill {
   background: linear-gradient(105deg, rgba(255,255,255,0) 8%, rgba(40,180,255,0.52) 26%, rgba(255,60,190,0.46) 40%, rgba(255,200,40,0.42) 54%, rgba(70,255,170,0.4) 66%, rgba(255,255,255,0) 84%);
   animation: sheen 5.8s linear infinite;
+}
+.badge.badge-c .sheen-fill {
+  background: linear-gradient(105deg, rgba(255,255,255,0) 8%, rgba(70,255,170,0.42) 26%, rgba(255,200,40,0.46) 40%, rgba(255,60,190,0.44) 54%, rgba(40,170,255,0.5) 66%, rgba(255,255,255,0) 84%);
+  animation: sheen 6.6s linear infinite;
 }
 
 /* Cage / filet */
